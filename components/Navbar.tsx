@@ -17,9 +17,11 @@ const navbar = () => {
 							className=""
 						/>
 					</Link>
-					<Link href="/">
-						<h1 className="text-2xl font-bold">WEGA</h1>
-					</Link>
+
+					<ul className="group cursor-pointer text-xl font-bold  transition duration-300">
+						<Link href="../">WEGA</Link>
+						<span className="block h-0.5 max-w-0 bg-purple-600 transition-all duration-500 group-hover:max-w-full" />
+					</ul>
 				</div>
 				<div className="flex items-center p-0">
 					<ul className="flex items-center space-x-6">

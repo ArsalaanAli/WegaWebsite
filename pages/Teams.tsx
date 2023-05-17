@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
-import { BsDiscord, BsFacebook } from "react-icons/bs";
-
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -18,7 +16,7 @@ const Team = () => {
 			url: "https://trumpwallpapers.com/wp-content/uploads/Rocket-League-Wallpaper-04-1920x1080-1.jpg",
 		},
 
-		{ url: "https://cdn.wallpapersafari.com/5/12/WuYijg.png" },
+		{ url: "https://cdn.wallpapersafari.com/5/34/sDpa8T.jpg" },
 		{
 			url: "https://wallpapers.com/images/featured/3v67z0soy51nutlt.jpg",
 		},
@@ -48,6 +46,9 @@ const Team = () => {
 	return (
 		<div>
 			<Navbar />
+			<p className="flex justify-center text-center text-3xl font-bold ">
+				WEGA's Collegiate Teams
+			</p>
 			<div className="group relative m-auto h-[780px] w-full max-w-[1400px] py-16 px-4">
 				<div
 					style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

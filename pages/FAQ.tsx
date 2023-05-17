@@ -20,24 +20,28 @@ const FAQ = () => {
 			desc: "You can purchase a membership on the USC Storefront: with this link: ",
 		},
 		{
+			title: "What games do you guys play?",
+			desc: "WEGA has a community of over 2000 users on discord and over 200 members with a membership, you name the game; someone else most likely plays it! ",
+		},
+		{
+			title: "What are the benefits of purchasing a membership?",
+			desc: "Purchasing a membership allows you to get free swag and merch (e.g. Lanyards, Keychains, Stickers) from us. In addition, you can compete in WEGA tournaments for free. ",
+		},
+		{
 			title: "Do I have to play games to join WEGA?",
-			desc: "No!",
+			desc: "No! Feel welcome to join WEGA even if you are not a gamer!",
 		},
 		{
 			title: "Can I tryout for a collegiate team?",
-			desc: "Yes! View the Teams page to view the teams that we have.",
+			desc: "Yes! Tryouts will be held during the beginning of the school year. View the Teams page to view the teams that we have. Additional information will be posted on discord for specific information and dates. ",
 		},
 		{
-			title: "How can I apply to become an exec?",
-			desc: "Sugondeez Nutz",
+			title: "What events does WEGA have and how can I attend?",
+			desc: "From Tournaments to In-Person Socials, WEGA has a variety of events for members to attend. Some past events include: Valorant Tournament, Mario Kart Tournament, Smash Tournament, Nintendo Night, Trivia Night and many more!",
 		},
 		{
-			title: "How can I apply to become an exec?",
-			desc: "Sugondeez Nutz",
-		},
-		{
-			title: "How can I apply to become an exec?",
-			desc: "Sugondeez Nutz",
+			title: "Does WEGA have a discord?",
+			desc: "Yes! Join our discord of over 2000 users: ",
 		},
 	];
 	return (

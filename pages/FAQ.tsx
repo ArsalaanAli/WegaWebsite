@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import Image from "next/image";
+import Head from "next/head";
 import banner from "../public/wega.jpg";
 import AccordionItem from "../components/AccordionItem";
 import { useState } from "react";
@@ -46,6 +47,9 @@ const FAQ = () => {
 	];
 	return (
 		<div>
+			<Head>
+				<title> FAQ </title>
+			</Head>
 			<Navbar />
 			<Image className="h-screen" src={banner} alt="FAQ page" />
 

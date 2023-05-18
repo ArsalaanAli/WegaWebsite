@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import Head from "next/head";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -45,6 +46,9 @@ const Team = () => {
 
 	return (
 		<div>
+			<Head>
+				<title> Teams</title>
+			</Head>
 			<Navbar />
 			<p className="flex justify-center text-center text-3xl font-bold ">
 				WEGA's Collegiate Teams

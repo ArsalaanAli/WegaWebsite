@@ -1,10 +1,14 @@
 import React from "react";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
+import Head from "next/head";
 
 const About = () => {
 	return (
 		<div>
+			<Head>
+				<title> About Us </title>
+			</Head>
 			<Navbar />
 			<p className=" text-center text-5xl">
 				Lorem Ipsum is simply dummy text of the printing and typesetting

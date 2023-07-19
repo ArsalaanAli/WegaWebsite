@@ -37,7 +37,7 @@ const About = () => {
 			<div>
 				<h1 className="mb-4 text-center text-2xl font-bold">Meet the Team!</h1>
 				<div>
-					<div className="flex">
+					<div className="flex content-center justify-center">
 						<div>
 							{Object.entries(groupedData).map(([role, users]) => (
 								<div key={role}>

@@ -11,18 +11,19 @@ const Team = () => {
 			url: "https://wallpapercave.com/wp/wp4302547.jpg",
 		},
 		{
-			url: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt79971d6ef53d8a5f/5e8cdeaa07387e0c9bfff0c5/IMAGE_4.jpg	",
+			url: "https://library.sportingnews.com/2021-08/valorant-promo-image-ftr_7xt9eqw2n2k71icqzep2efi5k.jpeg",
 		},
 		{
 			url: "https://trumpwallpapers.com/wp-content/uploads/Rocket-League-Wallpaper-04-1920x1080-1.jpg",
 		},
-
-		{ url: "https://cdn.wallpapersafari.com/5/34/sDpa8T.jpg" },
+		{
+			url: "https://bleedingcool.com/wp-content/uploads/2022/12/Overwatch-World-Cup-Generic-Art-1200x675.jpg",
+		},
 		{
 			url: "https://wallpapers.com/images/featured/3v67z0soy51nutlt.jpg",
 		},
 		{
-			url: "https://wallpapercave.com/wp/wp7881092.jpg",
+			url: "https://c4.wallpaperflare.com/wallpaper/624/883/791/counter-strike-global-offensive-counter-strike-wallpaper-preview.jpg",
 		},
 	];
 
@@ -47,7 +48,7 @@ const Team = () => {
 	return (
 		<div>
 			<Head>
-				<title> Teams</title>
+				<title>Teams</title>
 			</Head>
 			<Navbar />
 			<p className="flex justify-center text-center text-3xl font-bold ">
@@ -56,7 +57,7 @@ const Team = () => {
 			<div className="group relative m-auto h-[780px] w-full max-w-[1400px] py-16 px-4">
 				<div
 					style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-					className="h-full w-full rounded-2xl bg-cover bg-center duration-500"
+					className="h-full w-full rounded-2xl bg-cover bg-center bg-no-repeat duration-500"
 				></div>
 				{/* Left Arrow */}
 				<div className="absolute top-[50%] left-5 hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white group-hover:block">

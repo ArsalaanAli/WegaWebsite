@@ -14,7 +14,7 @@ import {
 	SiTwitch,
 	SiYoutube,
 	SiLinkedin,
-} from "react-icons/Si";
+} from "react-icons/si";
 
 interface User {
 	name: string;

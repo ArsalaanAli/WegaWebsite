@@ -9,7 +9,7 @@ import {
 	SiTwitch,
 	SiYoutube,
 	SiLinkedin,
-} from "react-icons/Si";
+} from "react-icons/si";
 
 function Icons() {
 	return (

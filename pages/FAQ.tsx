@@ -8,8 +8,10 @@ import AccordionItem from "../components/AccordionItem";
 import { useState } from "react";
 
 const FAQ = () => {
-	const [open, setOpen] = useState(false);
-	const toggle = (index) => {
+	const [open, setOpen] = useState<number | null>(null); // Add the type annotation here
+
+	const toggle = (index: number) => {
+		// Add the type annotation here
 		if (open === index) {
 			return setOpen(null);
 		}

@@ -41,7 +41,7 @@ const Team = () => {
 		setCurrentIndex(newIndex);
 	};
 
-	const goToSlide = (slideIndex) => {
+	const goToSlide = (slideIndex: React.SetStateAction<number>) => {
 		setCurrentIndex(slideIndex);
 	};
 
@@ -52,7 +52,7 @@ const Team = () => {
 			</Head>
 			<Navbar />
 			<p className="flex justify-center py-6 text-center text-3xl font-bold">
-				WEGA's Collegiate Teams
+				WEGA&#39;s Collegiate Teams
 			</p>
 			<div className="text-center text-xl">
 				Interested in our collegiate teams? Here are some of the titles that we

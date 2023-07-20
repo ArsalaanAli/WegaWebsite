@@ -16,37 +16,90 @@ import {
 	SiLinkedin,
 } from "react-icons/Si";
 
+interface User {
+	name: string;
+	role: string;
+	description: string;
+	image: string;
+	// Add other properties as needed
+}
+
 const About = () => {
 	const userData = [
-		{ name: "Jennica Cai", role: "President", description: "President" },
-		{ name: "Ijlaal Abdali", role: "Events", description: "Co-VP Events" },
-		{ name: "Linda Shi", role: "Events", description: "Co-VP Events" },
-		{ name: "Michael Huang", role: "Marketing", description: "VP Marketing" },
-		{ name: "Joey Siy", role: "Internal", description: "VP Internal" },
+		{
+			name: "Jennica Cai",
+			role: "President",
+			description: "President",
+			image: "dummy",
+		},
+		{
+			name: "Ijlaal Abdali",
+			role: "Events",
+			description: "Co-VP Events",
+			image: "dummy",
+		},
+		{
+			name: "Linda Shi",
+			role: "Events",
+			description: "Co-VP Events",
+			image: "dummy",
+		},
+		{
+			name: "Michael Huang",
+			role: "Marketing",
+			description: "VP Marketing",
+			image: "dummy",
+		},
+		{
+			name: "Joey Siy",
+			role: "Internal",
+			description: "VP Internal",
+			image: "dummy",
+		},
 		{
 			name: "Valentina Virviescas-Medina",
 			role: "Esports",
 			description: "Co-VP Esports",
+			image: "dummy",
 		},
-		{ name: "Elwin Wang", role: "Esports", description: "Co-VP Esports" },
-		{ name: "Manisha Rambarack", role: "Design", description: "VP Design" },
-		{ name: "Jacob Fenn", role: "Media", description: "VP Media" },
+		{
+			name: "Elwin Wang",
+			role: "Esports",
+			description: "Co-VP Esports",
+			image: "dummy",
+		},
+		{
+			name: "Manisha Rambarack",
+			role: "Design",
+			description: "VP Design",
+			image: "dummy",
+		},
+		{
+			name: "Jacob Fenn",
+			role: "Media",
+			description: "VP Media",
+			image: "dummy",
+		},
 		{
 			name: "Shelley Li",
 			role: "Partnerships",
 			description: "VP Partnerships",
+			image: "dummy",
 		},
 	];
 
 	// Group the user data by role
-	const groupedData = userData.reduce((acc, user) => {
-		const { role } = user;
-		if (!acc[role]) {
-			acc[role] = [];
-		}
-		acc[role].push(user);
-		return acc;
-	}, {});
+	const groupedData: { [key: string]: User[] } = userData.reduce(
+		(acc: { [key: string]: User[] }, user: User) => {
+			const { role } = user;
+			if (!acc[role]) {
+				acc[role] = [];
+			}
+			acc[role].push(user);
+			return acc;
+		},
+		{}
+	);
 	return (
 		<div>
 			<Head>
@@ -58,8 +111,8 @@ const About = () => {
 					What is WEGA?
 				</h1>
 				<h1 className="mb-4 text-center text-xl">
-					Western Esports Gaming Association is Western University's official
-					gaming and esports club.
+					Western Esports Gaming Association is Western University&#39;s
+					official gaming and esports club.
 				</h1>
 				<h1 className="mb-4 text-center text-xl">
 					WEGA hosts various tournaments, social events and programs throughout
@@ -96,6 +149,7 @@ const About = () => {
 												name={user.name}
 												role={user.role}
 												description={user.description}
+												image={user.image}
 											/>
 										))}
 									</div>

@@ -51,9 +51,13 @@ const Team = () => {
 				<title>Teams</title>
 			</Head>
 			<Navbar />
-			<p className="flex justify-center text-center text-3xl font-bold ">
+			<p className="flex justify-center py-5 text-center text-3xl font-bold">
 				WEGA's Collegiate Teams
 			</p>
+			<div className="text-center text-xl">
+				Interested in our collegiate teams? Here are some of the titles that we
+				play in for various competitive leagues.
+			</div>
 			<div className="group relative m-auto h-[780px] w-full max-w-[1400px] py-16 px-4">
 				<div
 					style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

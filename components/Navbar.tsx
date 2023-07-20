@@ -75,6 +75,21 @@ const Navbar = () => {
 							<Link href="/FAQ">FAQ</Link>
 							<span className="block h-0.5 max-w-0 bg-purple-600 transition-all duration-500 group-hover:max-w-full" />
 						</li>
+						<li className="group cursor-pointer text-xl font-bold  transition duration-300">
+							<Link href="https://www.akquire.ca/western/" target="_blank">
+								MERCH
+							</Link>
+							<span className="block h-0.5 max-w-0 bg-purple-600 transition-all duration-500 group-hover:max-w-full" />
+						</li>
+						<li className="group cursor-pointer text-xl font-bold  transition duration-300">
+							<Link
+								href="https://www.westernusc.store/product/esports-gaming-association/"
+								target="_blank"
+							>
+								MEMBERSHIP
+							</Link>
+							<span className="block h-0.5 max-w-0 bg-purple-600 transition-all duration-500 group-hover:max-w-full" />
+						</li>
 					</ul>
 				</div>
 			</nav>

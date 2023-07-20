@@ -51,7 +51,7 @@ const Team = () => {
 				<title>Teams</title>
 			</Head>
 			<Navbar />
-			<p className="flex justify-center py-5 text-center text-3xl font-bold">
+			<p className="flex justify-center py-6 text-center text-3xl font-bold">
 				WEGA's Collegiate Teams
 			</p>
 			<div className="text-center text-xl">

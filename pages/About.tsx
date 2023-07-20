@@ -54,7 +54,9 @@ const About = () => {
 			</Head>
 			<Navbar />
 			<div>
-				<h1 className="mb-4 text-center text-4xl font-bold">What is WEGA?</h1>
+				<h1 className="mb-4 pt-10 text-center text-4xl font-bold">
+					What is WEGA?
+				</h1>
 				<h1 className="mb-4 text-center text-xl">
 					Western Esports Gaming Association is Western University's official
 					gaming and esports club.

@@ -4,19 +4,17 @@ import banner from "../public/wegabanner.png";
 import LazyLoad from "react-lazy-load";
 
 function HomePage() {
-	return (
-		<div className="relative">
-			<LazyLoad>
-				<Image src={banner} alt="WEGA banner" />
-			</LazyLoad>
-			<p
-				className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-5xl text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-				style={{ marginTop: "10px" }}
-			>
-				Western's #1 Gaming Community
-			</p>
-		</div>
-	);
+  return (
+    <div className="overflow-hidden outline outline-1 outline-red-50">
+      <Image
+        src={"/Hero.png"}
+        alt="WEGA"
+        width={2048}
+        height={1365}
+        style={{ width: "100%", height: "auto" }}
+      />
+    </div>
+  );
 }
 
 export default HomePage;

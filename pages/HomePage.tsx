@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import banner from "../public/wegabanner.png";
+import banner from "../public/wegabanner.svg";
 import LazyLoad from "react-lazy-load";
 
 function HomePage() {

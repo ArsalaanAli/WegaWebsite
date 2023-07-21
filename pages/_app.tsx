@@ -4,7 +4,7 @@ import { Poppins } from "@next/font/google";
 
 const pop = Poppins({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "100", "300", "200"],
 });
 
 export default function App({ Component, pageProps }: AppProps) {

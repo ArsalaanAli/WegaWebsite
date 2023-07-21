@@ -9,7 +9,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        imagescale: {
+          from: { transform: "scale(1.2)" },
+          to: { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        imageanim: "imagescale 3s ease-in-out forwards",
+      },
+    },
   },
   plugins: [],
 };

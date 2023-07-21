@@ -1,9 +1,10 @@
-import React from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import banner from "../public/wegabanner.png";
 import LazyLoad from "react-lazy-load";
 
 function HomePage() {
+  const faqRef = useRef<null | HTMLDivElement>(null);
   return (
     <div className="overflow-hidden">
       <div className="absolute z-30 flex h-screen w-full flex-col ">
@@ -17,6 +18,24 @@ function HomePage() {
           <h3 className="mt-5 text-center text-xl font-extralight text-white md:text-2xl">
             Western University's largest gaming society
           </h3>
+          <div>
+            <button
+              className="z-0 mt-10 flex h-20 w-40 flex-col items-center justify-evenly rounded-full md:mt-28 lg:mt-40"
+              style={{
+                backgroundColor: "rgba(0,0,0,.7)",
+              }}
+              onClick={() => {
+                faqRef.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <div className="font-extralight text-white">Learn More</div>
+              <img
+                src="/downarrow.png"
+                width={20}
+                className="mx-2 animate-bounce"
+              />
+            </button>
+          </div>
         </div>
       </div>
       <Image
@@ -31,7 +50,10 @@ function HomePage() {
           objectFit: "cover",
         }}
       />
-      <div className="absolute flex h-screen w-full flex-col bg-black">
+      <div
+        ref={faqRef}
+        className="absolute flex h-screen w-full flex-col bg-black"
+      >
         <div className="mt-32 flex flex-col items-center">
           <h1 className="text-8xl font-black text-white underline decoration-purple-600">
             FAQ

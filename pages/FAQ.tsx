@@ -53,7 +53,20 @@ const FAQ = () => {
 				<title> FAQ </title>
 			</Head>
 			<Navbar />
-			<Image className="h-screen" src={banner} alt="FAQ page" />
+			<div className="bg-hero-image relative min-h-screen bg-cover bg-center">
+				<div className="aspect-w-16 aspect-h-9">
+					<div className="absolute top-0 left-0 h-full w-full">
+						<Image
+							className="h-screen" // Set the height of the Image to the screen height
+							src={banner}
+							alt="FAQ page"
+							layout="fill"
+							objectFit="cover"
+						/>
+					</div>
+				</div>
+				{/* Your content over the background */}
+			</div>
 
 			<section className="grid place-items-center text-center"> </section>
 			<div className="">

@@ -3,8 +3,10 @@ import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import Head from "next/head";
 import UserCard from "@/components/UserCard";
-import Image from "next/image";
+import profile from "../public/default.jpg";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
+
 import {
 	SiDiscord,
 	SiFacebook,
@@ -20,7 +22,7 @@ interface User {
 	name: string;
 	role: string;
 	description: string;
-	image: string;
+	image: StaticImageData;
 	// Add other properties as needed
 }
 
@@ -30,61 +32,61 @@ const About = () => {
 			name: "Jennica Cai",
 			role: "President",
 			description: "President",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Ijlaal Abdali",
 			role: "Events",
 			description: "Co-VP Events",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Linda Shi",
 			role: "Events",
 			description: "Co-VP Events",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Michael Huang",
 			role: "Marketing",
 			description: "VP Marketing",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Joey Siy",
 			role: "Internal",
 			description: "VP Internal",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Valentina Virviescas-Medina",
 			role: "Esports",
 			description: "Co-VP Esports",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Elwin Wang",
 			role: "Esports",
 			description: "Co-VP Esports",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Manisha Rambarack",
 			role: "Design",
 			description: "VP Design",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Jacob Fenn",
 			role: "Media",
 			description: "VP Media",
-			image: "dummy",
+			image: profile,
 		},
 		{
 			name: "Shelley Li",
 			role: "Partnerships",
 			description: "VP Partnerships",
-			image: "dummy",
+			image: profile,
 		},
 	];
 

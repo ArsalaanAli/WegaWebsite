@@ -6,15 +6,15 @@ import LazyLoad from "react-lazy-load";
 function HomePage() {
   return (
     <div className="overflow-hidden">
-      <div className="absolute z-40 flex h-screen w-full flex-col ">
+      <div className="absolute z-30 flex h-screen w-full flex-col ">
         <div className="mt-[15vw] flex flex-col items-center">
-          <h1 className="text-center text-xl font-black text-white md:text-6xl lg:text-8xl">
+          <h1 className="mt-12 text-center text-4xl font-black text-white md:mt-0 md:text-6xl lg:text-8xl">
             WESTERN ESPORTS
           </h1>
-          <h1 className="mt-5 text-center text-xl font-black text-white md:text-6xl lg:text-8xl">
+          <h1 className="mt-5 text-center text-4xl font-black text-white md:text-6xl lg:text-8xl">
             GAMING ASSOCIATION
           </h1>
-          <h3 className="mt-5 text-center text-2xl font-extralight text-white">
+          <h3 className="mt-5 text-center text-xl font-extralight text-white md:text-2xl">
             Western University's largest gaming society
           </h3>
         </div>
@@ -24,11 +24,10 @@ function HomePage() {
         alt="WEGA"
         width={2048}
         height={1365}
-        className=" z-0 animate-imageanim"
+        className="z-0 max-h-[90vh] min-h-[50vh] animate-imageanim"
         style={{
           width: "100%",
           height: "auto",
-          maxHeight: "90vh",
           objectFit: "cover",
         }}
       />

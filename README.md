@@ -1,4 +1,4 @@
-<img width="1440" alt="image" src="https://github.com/elyknehc/wegawebsite/assets/94413491/5725bfca-9f16-4bc7-addc-19449c3219f0">Official Website for Western Esports Gaming Association!
+Official Website for Western Esports Gaming Association!
 Current Deployed Site: https://westernega.vercel.app/
 
 

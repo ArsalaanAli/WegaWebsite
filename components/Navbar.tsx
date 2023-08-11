@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="absolute z-50 w-full">
         <div
           className={
-            "absolute z-50 h-screen w-full overflow-hidden  transition-all " +
+            "absolute z-50 h-screen w-full overflow-hidden  transition-all duration-500 " +
             (isOpen ? "left-0" : "left-full scale-x-0")
           }
         >
@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link href="#" className="text-6xl font-bold text-white">
               Home
             </Link>
-            <Link href="#" className="text-6xl font-bold text-white">
+            <Link href="/Teams" className="text-6xl font-bold text-white">
               Teams
             </Link>
             <Link href="#" className="text-6xl font-bold text-white">
@@ -86,8 +86,8 @@ const Navbar = () => {
     );
   } else {
     return (
-      <div className="absolute z-40 w-full sm:w-full">
-        <div className="absolute flex w-full flex-row items-center justify-center">
+      <div className="absolute z-50 w-full sm:w-full">
+        <div className="absolute z-50 flex w-full flex-row items-center justify-center">
           <Image
             src={"/LogoBadge.png"}
             alt="WEGA Logo"
@@ -97,17 +97,33 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row justify-around">
           <div className="mt-5 flex flex-row">
-            <div className="mx-12 text-white sm:text-sm md:text-xl">Home</div>
-            <div className="mx-12 text-white sm:text-sm md:text-xl">Teams</div>
+            <Link
+              href="/"
+              className="z-50 mx-12 text-white sm:text-sm md:text-xl"
+            >
+              Home
+            </Link>
+            <Link
+              href="/Teams"
+              className="z-50 mx-12 text-white sm:text-sm md:text-xl"
+            >
+              Teams
+            </Link>
           </div>
 
           <div className="mt-5 flex flex-row">
-            <div className="mx-12 text-white sm:text-sm md:text-xl">
+            <Link
+              href="#"
+              className="z-50 mx-12 text-white sm:text-sm md:text-xl"
+            >
               About Us
-            </div>
-            <div className="mx-12 text-white sm:text-sm md:text-xl">
+            </Link>
+            <Link
+              href="#"
+              className="sm:textLink-sm z-50 mx-12 text-white md:text-xl"
+            >
               Membership
-            </div>
+            </Link>
           </div>
         </div>
       </div>

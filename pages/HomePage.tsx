@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import banner from "../public/wegabanner.png";
 import LazyLoad from "react-lazy-load";
+import FAQ from "@/components/FAQ";
 
 function HomePage() {
   const faqRef = useRef<null | HTMLDivElement>(null);
@@ -52,12 +53,13 @@ function HomePage() {
       />
       <div
         ref={faqRef}
-        className="absolute flex h-screen w-full flex-col bg-black"
+        className="absolute flex w-full flex-col bg-solid pb-20"
       >
         <div className="mt-32 flex flex-col items-center">
-          <h1 className="text-8xl font-black text-white underline decoration-purple-600">
+          <h1 className="text-8xl font-black text-white underline decoration-primary">
             FAQ
           </h1>
+          <FAQ />
         </div>
       </div>
     </div>

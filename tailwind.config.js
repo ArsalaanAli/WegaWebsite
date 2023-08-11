@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -27,6 +28,7 @@ module.exports = {
     },
 
     extend: {
+      colors: { solid: "#04080F", primary: "#4400ff" },
       keyframes: {
         imagescale: {
           from: { transform: "scale(1.2)" },

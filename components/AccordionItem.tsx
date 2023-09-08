@@ -6,7 +6,7 @@ interface AccordionItemProps {
 	open: boolean;
 	toggle: () => void;
 	title: string;
-	description: string;
+	description: any;
 }
 
 const AccordionItem: React.FC<AccordionItemProps> = ({

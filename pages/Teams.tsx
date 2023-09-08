@@ -52,7 +52,7 @@ const Team = () => {
 			</Head>
 			<Navbar />
 			<p className="flex justify-center py-6 text-center text-3xl font-bold">
-				WEGA&#39;s Collegiate Teams
+				Western Collegiate Esports Teams
 			</p>
 			<div className="text-center text-xl">
 				Interested in our collegiate teams? Here are some of the titles that we

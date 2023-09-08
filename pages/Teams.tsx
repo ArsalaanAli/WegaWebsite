@@ -14,16 +14,16 @@ const Team = () => {
 			url: "https://library.sportingnews.com/2021-08/valorant-promo-image-ftr_7xt9eqw2n2k71icqzep2efi5k.jpeg",
 		},
 		{
-			url: "https://trumpwallpapers.com/wp-content/uploads/Rocket-League-Wallpaper-04-1920x1080-1.jpg",
+			url: "https://gameranx.com/wp-content/uploads/2017/04/Rocket-League-1.jpg",
 		},
 		{
-			url: "https://bleedingcool.com/wp-content/uploads/2022/12/Overwatch-World-Cup-Generic-Art-1200x675.jpg",
+			url: "https://pixelz.cc/wp-content/uploads/2018/07/overwatch-logo-uhd-4k-wallpaper.jpg",
 		},
 		{
 			url: "https://wallpapers.com/images/featured/3v67z0soy51nutlt.jpg",
 		},
 		{
-			url: "https://c4.wallpaperflare.com/wallpaper/624/883/791/counter-strike-global-offensive-counter-strike-wallpaper-preview.jpg",
+			url: "https://ensiplay.com/storage/uploads/images/475/1.jpg",
 		},
 	];
 

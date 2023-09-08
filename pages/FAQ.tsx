@@ -5,6 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import banner from "../public/wega.jpg";
 import AccordionItem from "../components/AccordionItem";
+import Link from "next/link";
 import { useState } from "react";
 
 const FAQ = () => {
@@ -19,7 +20,7 @@ const FAQ = () => {
 	};
 	const accordionData = [
 		{
-			title: "How Do I Join WEGA?",
+			title: "How do I join WEGA?",
 			desc: "You can purchase a membership on the USC Storefront: with this link: ",
 		},
 		{
@@ -40,11 +41,20 @@ const FAQ = () => {
 		},
 		{
 			title: "What events does WEGA have and how can I attend?",
-			desc: "From Tournaments to In-Person Socials, WEGA has a variety of events for members to attend. Some past events include: Valorant Tournament, Mario Kart Tournament, Smash Tournament, Nintendo Night, Trivia Night and many more!",
+			desc: "From tournaments to in-person socials, WEGA has a variety of events for members to attend. Some past events include: Valorant Tournament, Mario Kart Tournament, Smash Tournament, Nintendo Night, Trivia Night and many more!",
 		},
 		{
 			title: "Does WEGA have a discord?",
-			desc: "Yes! Join our discord of over 2000 users: ",
+			desc: (
+				<p>
+					{" "}
+					Yes, join our discord community of over 2000 members!{" "}
+					<Link target="_blank" href="https:/discord.gg/invite/wega">
+						{" "}
+						discord.gg/invite/wega{" "}
+					</Link>
+				</p>
+			),
 		},
 	];
 	return (
